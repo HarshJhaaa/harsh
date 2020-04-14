@@ -1,0 +1,14 @@
+<script>
+    $(document).ready(function(){
+         
+        document.querySelector('.click').addEventListener("click",function(){
+              var score1 = 0;
+              score1++;
+              $.post('/data.json',{
+                  score: score1,
+              },function(data,status){
+
+              })
+        })
+    })
+</script>
